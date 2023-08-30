@@ -5,7 +5,7 @@ include "koneksi.php";
 $id = $_POST['id'];
 $tanggal = date("Y-m-d");
 $tanggapan = $_POST['tanggapan'];
-$id_petugas = $_SESSION['username'];
+$id_petugas = $_SESSION['id_petugas'];
 $query = $koneksi->query("INSERT into tanggapan values(null, $id, '$tanggal', '$tanggapan', $id_petugas)");
 
 if($query){
