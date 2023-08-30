@@ -1,5 +1,5 @@
 <?php
-    include("cek-login-petugas.php");
+    include("cek_login.php");
     include("koneksi.php");
 
     $query = $koneksi->query("select * from pengaduan");
